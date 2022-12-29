@@ -1,0 +1,6 @@
+.add-task-form{
+    margin-top:15rem;
+}
+.add-task-form form input, .add-task-form button{
+    padding: 11px 15px;
+}
