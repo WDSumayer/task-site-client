@@ -56,10 +56,11 @@ const AddTask = () => {
     return (
         <div className='container'>
             <div className='row'>
-                <div className='col-12 col-md-3'></div>
-                <div className='col-12 col-md-6'>
+                <div className='col-12 col-md-2 col-lg-3'></div>
+                <div className='col-12 col-md-8 col-lg-6'>
                    <div className='add-task-form'>
-                   <Form onSubmit={handleSubmit(handleAddTask)}>
+                 
+                  <Form onSubmit={handleSubmit(handleAddTask)}>
                         <Form.Group className="mb-3">
                             <Form.Label className='fw-semibold'>Task Name</Form.Label>
                             <Form.Control type="text" className={error ? 'rounded-1 bg-danger' : 'rounded-1'} placeholder='Your Task Name' {...register("name", { required: 'name is required' })} />
@@ -80,9 +81,10 @@ const AddTask = () => {
                        
                         <Button className='w-100 rounded-1 fw-semibold' type="submit">Add task</Button>
                     </Form>
-                   </div>
+                  </div>
+                 
                 </div>
-                <div className='col-12 col-md-3'></div>
+                <div className='col-12 col-md-2 col-lg-3'></div>
             </div>
 
         </div>
